@@ -5,14 +5,11 @@
 
 body{
     background-color: #f7efde;
-    width: 100%;
 }
 main{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    overflow-x: hidden;
 }
 .header-logo{
     max-height: 180px;
@@ -46,7 +43,7 @@ body p{
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.676);
     text-align: center;
-    max-width: 250px;
+    max-width: 260px;
 }
 
 .card-title{
@@ -64,5 +61,4 @@ body p{
     .lashCards {
         grid-template-columns:  1fr;
     }
-
 }
