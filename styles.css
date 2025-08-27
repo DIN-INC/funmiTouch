@@ -12,15 +12,15 @@ main{
     align-items: center;
 }
 .header-logo{
-    max-height: 180px;
+    max-height: 220px;
     display: flex;
 }
 
 body p{
-    color: #D4AF37;
+    color: #C9AA66;
     display: flex;
     font-family: 'lato', sans-serif;
-    font-size: 20px;
+    font-size: 32px;
     text-align: center;
     margin-top: 10px;
     margin-bottom: 15px;
@@ -43,7 +43,7 @@ body p{
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.676);
     text-align: center;
-    max-width: 260px;
+    max-width: 270px;
 }
 
 .card-title{
@@ -56,9 +56,54 @@ body p{
 .card img{
     height: 204px;
 }
-
+.small-header{
+    text-align: center;
+    color: rgb(172, 47, 46);
+}
 @media (max-width: 768px) {
+    .header-logo{
+        max-height: 270px;
+    }
+    body p{
+        font-size: 26px;
+    }
+}
+@media (max-width: 578px) {
+    .header-logo{
+        max-height: 150px;
+    }
+    body p{
+        font-size: 16px;
+    }
     .lashCards {
-        grid-template-columns:  1fr;
+        grid-template-columns: 1fr  1fr;
+        gap: 20px;
+    }
+    .card-title{
+        font-size: 15px;
+    }
+    .card{
+        width: 130px;
+    }
+    .card img{
+        height: 70px;
+    }
+}
+@media (max-width: 300px) {
+    body p{
+        font-size: 16px;
+    }
+    .lashCards {
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+    .card{
+        width: 120px;
+    }
+    .card-title{
+        font-size: 12px;
+    }
+.card img{
+        height: 80px;
     }
 }
